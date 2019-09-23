@@ -7,29 +7,51 @@
 
                     <div class="card-body">
                         #donewithvue.js<br>
-                        <table style="border: 1px solid black; width:15%;">
-                            <tr style="border: 1px solid black;">
-                                <th style="border: 1px solid black;">_</th>
-                                <th style="border: 1px solid black;">_</th>
-                                <th style="border: 1px solid black;">_</th>
-                            </tr>
-                            <tr style="border: 1px solid black;">
-                                <th style="border: 1px solid black;">_</th>
-                                <th style="border: 1px solid black;">_</th>
-                                <th style="border: 1px solid black;">_</th>
-                            </tr>
-                            <tr style="border: 1px solid black;">
-                                <th style="border: 1px solid black;">_</th>
-                                <th style="border: 1px solid black;">_</th>
-                                <th style="border: 1px solid black;">_</th>
-                            </tr>
-                        </table>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4 border-right border-bottom tic-tac-toe-box"></div>
+                                <div class="col-4 border-left border-right border-bottom tic-tac-toe-box"></div>
+                                <div class="col-4 border-left border-bottom tic-tac-toe-box"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 border-right border-top border-bottom tic-tac-toe-box"></div>
+                                <div class="col-4 border-left border-right border-top border-bottom tic-tac-toe-box"></div>
+                                <div class="col-4 border-left border-top border-bottom tic-tac-toe-box"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 border-right border-top tic-tac-toe-box"></div>
+                                <div class="col-4 border-left border-right border-top tic-tac-toe-box"></div>
+                                <div class="col-4 border-left border-top tic-tac-toe-box"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
+
+<style scoped>
+.border-right{
+    border-right: 1px solid black;
+}
+
+.border-left{
+    border-left: 1px solid black;
+}
+
+.border-top{
+    border-top: 1px solid black;
+}
+
+.border-bottom {
+    border-bottom: 1px solid black;
+}
+
+.tic-tac-toe-box{
+    height: 150px!important;
+}
+</style>
 
 <script>
     export default {
