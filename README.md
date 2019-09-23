@@ -1,4 +1,4 @@
 # Online TicTacToe mit Community
 
 created by ISO 17A
-Gang BANG
+Capi Samra zählen wieder Lila
