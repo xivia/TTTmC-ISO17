@@ -11,6 +11,9 @@
 |
 */
 
+
+Route::get('/log', 'previousGamesController@index')->name('previousGames');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -32,3 +35,4 @@ Auth::routes();
 Route::post('/editProfile', 'EditProfileController@edit')->name('edit');
 
 
+Route::get('/home', 'HomeController@index')->name('home');
