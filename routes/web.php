@@ -29,14 +29,6 @@ Route::get('/editProfile', 'EditProfileController@index')->name('editProfile');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
 Route::post('/editProfile', 'EditProfileController@edit')->name('edit');
 
 
