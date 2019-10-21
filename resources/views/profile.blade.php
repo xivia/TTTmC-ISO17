@@ -7,12 +7,18 @@
         <div class="col-md-8">
             <div class="card">
             	@foreach($users as $user)
-	                <div class="card-header">{{ __($user->firstname) }}</div>
+	                <div class="card-header">{{ ($user->username) }}</div>
 	                	<div class="card-body">
 
 	                		{{ $user->firstname }}
 							<br>
+                            {{ $user->lastname }}
+                            <br>
+                            {{ $user->status }}
+                            <br>
 							{{ $user->email }}
+                            <br>
+                            <a href="{{ URL::route('editProfile') }}" class="btn btn-default"> Edit Profile </a>
 
 	                    </div>
 	                </div>
