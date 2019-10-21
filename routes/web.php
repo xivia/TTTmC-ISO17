@@ -11,6 +11,9 @@
 |
 */
 
+
+Route::get('/log', 'previousGamesController@index')->name('previousGames');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -25,10 +28,10 @@ Route::get('/profile', 'ProfilController@index')->name('profile');
 
 Auth::routes();
 
+Auth::routes();
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-
