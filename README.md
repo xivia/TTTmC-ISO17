@@ -1,4 +1,2 @@
-# Online TicTacToe mit Community
-
+# Online TicTacToe
 created by ISO 17A
-Gang BANG
