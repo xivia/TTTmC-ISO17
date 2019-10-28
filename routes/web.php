@@ -11,6 +11,9 @@
 |
 */
 
+
+Route::get('/log', 'previousGamesController@index')->name('previousGames');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -25,14 +28,19 @@ Route::get('/profile', 'ProfilController@index')->name('profile');
 
 Auth::routes();
 
+<<<<<<< HEAD
 Route::get('/rankings', 'RankingsController@index')->name('rankings');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+=======
+Route::get('/editProfile', 'EditProfileController@index')->name('editProfile');
+>>>>>>> 843281e3632c1e354216c24b63d94eff4ecd08f6
 
 Auth::routes();
 
+Route::post('/editProfile', 'EditProfileController@edit')->name('edit');
+
+
 Route::get('/home', 'HomeController@index')->name('home');
-
-
