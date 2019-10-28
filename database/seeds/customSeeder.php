@@ -13,17 +13,17 @@ class customSeeder extends Seeder
     {
         $log = new App\Log();
         $log->userId = 1;
-        $log->match = 'oiefifeaof';
+        $log->match = '8034076';
         $log->enemy =  'AI';
-        $log->difficulty =  'medium';
-        $log->moves = 3;
-        $log->result = 'win';
+        $log->difficulty =  'hard';
+        $log->moves = 4;
+        $log->result = 'loose';
         $log->save();
 
         $log = new App\Log();
         $log->userid = 2;
-        $log->match = 'oiefifeaof';
-        $log->enemy =  'AI';
+        $log->match = '7546793';
+        $log->enemy =  'User1';
         $log->difficulty =  'medium';
         $log->moves = 3;
         $log->result = 'win';
@@ -31,11 +31,23 @@ class customSeeder extends Seeder
 
         $log = new App\Log();
         $log->userid = 3;
-        $log->match = 'oiefifeaof';
-        $log->enemy =  'AI';
-        $log->difficulty =  'medium';
-        $log->moves = 3;
-        $log->result = 'win';
+        $log->match = '5467754';
+        $log->enemy =  'User2';
+        $log->difficulty =  'easy';
+        $log->moves = 6;
+        $log->result = 'tie';
         $log->save();
+
+        $u = new App\User();
+        $u->username = 'user1';
+        $u->email = 'user1@user1.com';
+        $u->password =  '$2y$10$1LKXkI1RRsoO3Xh5PJxPr.Q505jVycLR1lYq17DIRlSdDfPkOZsZK';
+        $u->save();
+
+        $u = new App\User();
+        $u->username = 'user2';
+        $u->email = 'user2@user2.com';
+        $u->password =  '$2y$10$1LKXkI1RRsoO3Xh5PJxPr.Q505jVycLR1lYq17DIRlSdDfPkOZsZK';
+        $u->save();
     }
 }
