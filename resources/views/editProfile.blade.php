@@ -56,13 +56,13 @@
 
                         <div class="form-group row">
                             <label class="col-md-4 col-form-label text-md-right"></label>
-                            <button class="col-md-6 btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                Change your Password
-                            </button>
+                            <button class="col-md-6 btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Change your Password</button>
                         </div>
+
                         <div class="form-group row">
                             <label class="col-md-4 col-form-label text-md-right"></label>
                             <div class="collapse col-md-6" id="collapseExample">
+
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="New Password">
 
                                 <br>
