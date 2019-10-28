@@ -15,10 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/rankings', function () {
-    return view('rankings');
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -26,6 +22,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/profile', 'ProfilController@index')->name('profile');
+
+Auth::routes();
+
+Route::get('/rankings', 'RankingsController@index')->name('rankings');
 
 Auth::routes();
 
