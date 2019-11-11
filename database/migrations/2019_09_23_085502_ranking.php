@@ -11,6 +11,8 @@ class Ranking extends Migration
      *
      * @return void
      */
+
+
     public function up()
     {
         Schema::create('rankings', function (Blueprint $table) {
@@ -32,6 +34,6 @@ class Ranking extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('rankings');
     }
 }

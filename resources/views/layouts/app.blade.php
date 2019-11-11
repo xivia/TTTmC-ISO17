@@ -40,13 +40,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('profile') }}">{{ __('Profile') }}</a>
                         </li>
-<<<<<<< HEAD
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('rankings') }}">{{ __('Rankings') }}</a>
                         </li>
-                    </ul>
-=======
->>>>>>> 843281e3632c1e354216c24b63d94eff4ecd08f6
 
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('previousGames') }}">{{ __('Log') }}</a>
@@ -65,10 +61,10 @@
                         </li>
                         @endif
                         @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->username }} <span class="caret"></span>
-                                </a>
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->username }} <span class="caret"></span>
+                            </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
