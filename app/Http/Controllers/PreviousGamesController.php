@@ -14,4 +14,11 @@ class PreviousGamesController extends Controller
 
         return view('previousGames', compact('log'));
     }
+
+    public function show()
+    {
+        $log = Log::orderBy('enemy', 'desc')->get();
+
+        return view('previousGames', compact('log'));
+    }
 }

@@ -12,7 +12,7 @@
 */
 
 
-Route::get('/log', 'previousGamesController@index')->name('previousGames');
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -29,6 +29,10 @@ Route::get('/profile', 'ProfilController@index')->name('profile');
 Auth::routes();
 
 Route::get('/editProfile', 'EditProfileController@index')->name('editProfile');
+
+Route::get('/log', 'previousGamesController@index')->name('previousGames')->middleware('auth');
+
+Route::get('/log', 'previousGamesController@show')->name('previousGames')->middleware('auth');
 
 Auth::routes();
 
