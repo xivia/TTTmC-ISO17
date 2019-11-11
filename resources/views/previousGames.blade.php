@@ -25,14 +25,13 @@
 		</thead>
 		<tbody>
 
-
 			@if(isset($log))
 			@foreach($log as $log)
 			<tr>
 				<td> {{$log->match}} </td>
 				<td> {{$log->enemy}} </td>
 				<td> {{$log->result}} </td>
-				<td> {{$log->Difficulty}} </td>
+				<td> {{$log->difficulty}} </td>
 				<td> {{$log->moves}} </td>
 			</tr>
 			@endforeach
