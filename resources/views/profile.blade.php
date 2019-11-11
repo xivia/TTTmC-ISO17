@@ -18,7 +18,7 @@
                             <br>
 							{{ $user->email }}
                             <br>
-                            <a href="{{ URL::route('editProfile') }}" class="btn btn-default"> Edit Profile </a>
+                            <a href="{{ URL::route('editProfile') }}" class="btn btn btn-primary"> Edit Profile </a>
 
 	                    </div>
 	                </div>

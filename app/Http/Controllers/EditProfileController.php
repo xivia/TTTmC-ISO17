@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class EditProfileController extends Controller
 {
@@ -57,9 +58,12 @@ class EditProfileController extends Controller
             $user->email = $request['email'];
         }
 
+        if( $request['password'] == $request['confirmpassword'] && ($request['password'] != null) ){
+            $user->password = Hash::make($request['password']);
+        }
+
         $user->save();
 
-        $id = Auth::id();
         $users = DB::table('users')->where('id', $id)->get();
         return view('profile', compact('users'));
 
