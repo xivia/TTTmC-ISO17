@@ -5,14 +5,12 @@
 
     <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-8">
-
-            <form method="POST" action="{{ route('search') }}">
-                <input class="form-control col-md-10" type="search" name="input" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success col-md-2" type="submit">Search</button>
-            </form>
-
-        </div>
+            <div class="col-md-8">
+                <form method="POST" action="{{ route('search') }}">
+                        <input  type="text" name="input" placeholder="Search" aria-label="Search">
+                        <button  type="submit">Search</button>
+                </form>
+            </div>
         <div class="col-md-2"></div>
     </div>
 
@@ -28,6 +26,7 @@
                             <tr>
                                 <th scope="col">username</th>
                                 <th scope="col">firstname</th>
+                                <th scope="col">lastname</th>
                                 <th scope="col">email</th>
                             </tr>
                         </thead>
@@ -36,6 +35,7 @@
                             <tr>
                                 <td>{{ $user->username }}</td>
                                 <td>{{ $user->firstname }}</td>
+                                <td>{{ $user->lastname }}</td>
                                 <td>{{ $user->email }}</td>
                             </tr>
                             @endforeach

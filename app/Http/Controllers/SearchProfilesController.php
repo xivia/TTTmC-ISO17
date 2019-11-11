@@ -33,7 +33,7 @@ class SearchProfilesController extends Controller
     public function search(Request $request){
 
         $users = DB::table('users')->where('name', 'like', '%'. $searchVar . '%')->orWhere('firstname', 'like', '%'. $searchVar . '%')->get();
-        return view('profile', compact('users'));
+        return view('searchProfiles', compact('users'));
 
     }
 

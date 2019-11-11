@@ -46,12 +46,10 @@ Auth::routes();
 
 Route::post('/editProfile', 'EditProfileController@edit')->name('edit');
 
-<<<<<<< HEAD
 Auth::routes();
 
 Route::post('/searchProfiles', 'SearchProfilesController@search')->name('search');
 
+Auth::routes();
 
-=======
->>>>>>> 737debf5ce710052071a2264dd4d4c1eb4c00d81
 Route::get('/home', 'HomeController@index')->name('home');

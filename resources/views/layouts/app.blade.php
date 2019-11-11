@@ -41,6 +41,9 @@
                             <a class="nav-link" href="{{ route('profile') }}">{{ __('Profile') }}</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="{{ route('searchProfiles') }}">{{ __('SearchProfiles') }}</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="{{ route('rankings') }}">{{ __('Rankings') }}</a>
                         </li>
 
