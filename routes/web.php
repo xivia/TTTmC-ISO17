@@ -28,6 +28,14 @@ Route::get('/profile', 'ProfilController@index')->name('profile');
 
 Auth::routes();
 
+Route::get('/rankings', 'RankingsController@index')->name('rankings');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
 Route::get('/editProfile', 'EditProfileController@index')->name('editProfile');
 
 Route::get('/log', 'previousGamesController@index')->name('previousGames')->middleware('auth');
@@ -37,6 +45,5 @@ Route::get('/log', 'previousGamesController@show')->name('previousGames')->middl
 Auth::routes();
 
 Route::post('/editProfile', 'EditProfileController@edit')->name('edit');
-
 
 Route::get('/home', 'HomeController@index')->name('home');
