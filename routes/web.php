@@ -28,6 +28,14 @@ Route::get('/profile', 'ProfilController@index')->name('profile');
 
 Auth::routes();
 
+Route::get('/rankings', 'RankingsController@index')->name('rankings');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
 Route::get('/editProfile', 'EditProfileController@index')->name('editProfile');
 
 Auth::routes();
@@ -38,9 +46,12 @@ Auth::routes();
 
 Route::post('/editProfile', 'EditProfileController@edit')->name('edit');
 
+<<<<<<< HEAD
 Auth::routes();
 
 Route::post('/searchProfiles', 'SearchProfilesController@search')->name('search');
 
 
+=======
+>>>>>>> 737debf5ce710052071a2264dd4d4c1eb4c00d81
 Route::get('/home', 'HomeController@index')->name('home');
