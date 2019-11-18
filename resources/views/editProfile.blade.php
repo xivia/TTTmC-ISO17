@@ -63,7 +63,11 @@
                             <label class="col-md-4 col-form-label text-md-right"></label>
                             <div class="collapse col-md-6" id="collapseExample">
 
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="New Password">
+                                <input id="oldpassword" type="password" class="form-control @error('oldpassword') is-invalid @enderror" name="oldpassword" placeholder="Current Password">
+
+                                <br>
+
+                                <input id="passwordnew" type="password" class="form-control @error('passwordnew') is-invalid @enderror" name="passwordnew" placeholder="New Password">
 
                                 <br>
 
