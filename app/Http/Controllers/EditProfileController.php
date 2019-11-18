@@ -58,8 +58,8 @@ class EditProfileController extends Controller
             $user->email = $request['email'];
         }
 
-        if($user->password = Hash::make($request['oldpassword'])){
-            if( $request['passwordnew'] == $request['confirmpassword'] && ($request['passwordnew'] != null) ){
+        if($user->password == Hash::make($request['oldpassword'])){
+            if( $request['passwordnew'] != $request['confirmpassword'] && ($request['passwordnew'] != null) ){
                 $user->password = Hash::make($request['passwordnew']);
             }
         }

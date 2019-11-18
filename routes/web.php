@@ -42,15 +42,7 @@ Route::get('/log', 'previousGamesController@show')->name('previousGames')->middl
 
 Auth::routes();
 
-Route::get('/searchProfiles', 'SearchProfilesController@index')->name('searchProfiles');
-
-Auth::routes();
-
 Route::post('/editProfile', 'EditProfileController@edit')->name('edit');
-
-Auth::routes();
-
-Route::post('/searchProfiles', 'SearchProfilesController@search')->name('search');
 
 Auth::routes();
 
