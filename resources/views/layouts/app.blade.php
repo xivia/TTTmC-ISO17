@@ -42,6 +42,10 @@
                         </li>
 
                         <li class="nav-item">
+                            <a class="nav-link" href="{{ route('listUsers') }}">{{ __('Find a player') }}</a>
+                        </li>
+
+                        <li class="nav-item">
                             <a class="nav-link" href="{{ route('previousGames') }}">{{ __('Log') }}</a>
                         </li>
                     </ul>

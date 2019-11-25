@@ -25,13 +25,11 @@ class ListUsersController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
 
-
-        public function ShowUserlist(){
-
+        public function index(){
 
         $users = User::all();
 
-        return view('profile.dashboard', compact('users'));
+        return view('listUsers', compact('users'));
     }
 
 }

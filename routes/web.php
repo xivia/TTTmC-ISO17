@@ -30,6 +30,10 @@ Route::get('/rankings', 'RankingsController@index')->name('rankings');
 
 Auth::routes();
 
+Route::get('/listUsers', 'ListUsersController@index')->name('listUsers');
+
+Auth::routes();
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
