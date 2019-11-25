@@ -16,7 +16,7 @@
 	<table class="table">
 		<thead>
 			<tr>
-				<th scope="col">match</th>
+				<th scope="col">Match Nr.</th>
 				<th scope="col">Enemy</th>
 				<th scope="col">Result</th>
 				<th scope="col">Difficulty</th>
