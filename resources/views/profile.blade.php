@@ -7,7 +7,9 @@
         <div class="col-md-8">
             <div class="card">
             	@foreach($users as $user)
-	                <div class="card-header">{{ ($user->username) }}</div>
+	                <div class="card-header">
+                        {{ ($user->username) }}
+                    </div>
 	                	<div class="card-body">
 
 	                		{{ $user->firstname }}

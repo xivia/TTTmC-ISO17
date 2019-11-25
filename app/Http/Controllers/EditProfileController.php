@@ -58,6 +58,21 @@ class EditProfileController extends Controller
             $user->email = $request['email'];
         }
 
+        if ($request->has('picturepath')) {
+            // Get image file
+            $image = $request->file('picturepath');
+            // Make a image name based on user name and current timestamp
+            $name = Str::slug($request->input('name')).'_'.time();
+            // Define folder path
+            $folder = '/uploads/images/';
+            // Make a file path where image will be stored [ folder path + file name + file extension]
+            $filePath = $folder . $name. '.' . $image->getClientOriginalExtension();
+            // Upload image
+            $this->uploadOne($image, $folder, 'public', $name);
+            // Set user profile image path in database to filePath
+            $user->picturepath = $filePath;
+        }
+
         if($user->password == Hash::make($request['oldpassword'])){
             if( $request['passwordnew'] != $request['confirmpassword'] && ($request['passwordnew'] != null) ){
                 $user->password = Hash::make($request['passwordnew']);

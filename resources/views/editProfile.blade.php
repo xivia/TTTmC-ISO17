@@ -55,6 +55,14 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Profile Picture') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="picture" type="file" class="form-control @error('picture') is-invalid @enderror" name="picture" placeholder="{{ Auth::user()->picture }}">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label class="col-md-4 col-form-label text-md-right"></label>
                             <button class="col-md-6 btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Change your Password</button>
                         </div>
