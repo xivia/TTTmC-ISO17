@@ -48,6 +48,8 @@ Route::get('/editProfile', 'EditProfileController@index')->name('editProfile');
 
 Route::get('/log', 'previousGamesController@index')->name('previousGames')->middleware('auth');
 
+// Route::get('/log', 'previousGamesController@show')->name('previousGames')->middleware('auth');
+
 Auth::routes();
 
 Route::post('/editProfile', 'EditProfileController@edit')->name('edit');
