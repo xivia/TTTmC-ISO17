@@ -30,7 +30,13 @@ Route::get('/rankings', 'RankingsController@index')->name('rankings');
 
 Auth::routes();
 
-Route::get('/listUsers', 'ListUsersController@index')->name('listUsers');
+Route::get('/listUsers', 'ListUsersController@index');
+Route::get('/listUsers/action', 'ListUsersController@action')->name('listUsers.action');
+
+Route::resources([
+    'listUsers' => 'ListUsersController',
+    'listUsers.action' => 'PostController'
+]);
 
 Auth::routes();
 
