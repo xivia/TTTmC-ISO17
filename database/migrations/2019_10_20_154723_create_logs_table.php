@@ -19,7 +19,7 @@ class CreateLogsTable extends Migration
             $table->string('match');
             $table->string('enemy');
             $table->string('result');
-            $table->string('Difficulty');
+            $table->string('difficulty');
             $table->integer('moves');
             $table->timestamps();
         });
