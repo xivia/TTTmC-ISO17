@@ -8,17 +8,17 @@
                     <div class="card-body">
                         #donewithvue.js<br>
                         <div class="container-fluid">
-                            <div class="row">
+                            <div class="row row-grid">
                                 <div class="col-4 border-right border-bottom tic-tac-toe-box"></div>
                                 <div class="col-4 border-left border-right border-bottom tic-tac-toe-box"></div>
                                 <div class="col-4 border-left border-bottom tic-tac-toe-box"></div>
                             </div>
-                            <div class="row">
+                            <div class="row row-grid">
                                 <div class="col-4 border-right border-top border-bottom tic-tac-toe-box"></div>
                                 <div class="col-4 border-left border-right border-top border-bottom tic-tac-toe-box"></div>
                                 <div class="col-4 border-left border-top border-bottom tic-tac-toe-box"></div>
                             </div>
-                            <div class="row">
+                            <div class="row row-grid">
                                 <div class="col-4 border-right border-top tic-tac-toe-box"></div>
                                 <div class="col-4 border-left border-right border-top tic-tac-toe-box"></div>
                                 <div class="col-4 border-left border-top tic-tac-toe-box"></div>
@@ -52,8 +52,11 @@
     height: 150px!important;
 }
 </style>
+ 
 
 <script>
+    
+
     export default {
         mounted() {
             console.log('Component mounted.')
