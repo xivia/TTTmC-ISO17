@@ -38104,7 +38104,7 @@ var render = function() {
                   _vm._v("Yikes!")
                 ])
               : _c("div", { staticClass: "result" }, [
-                  _vm._v("Finished!"),
+                  _vm._v("Nice!"),
                   _c("br"),
                   _c("span", { staticClass: "winner" }, [
                     _vm._v(_vm._s(_vm.next))
@@ -38145,7 +38145,7 @@ var render = function() {
         0
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "footer-grid" }, [
+      _c("div", { staticClass: "footer footer-grid" }, [
         _vm.finished
           ? _c("a", { staticClass: "restart", on: { click: _vm.restart } }, [
               _vm._v("New game")
