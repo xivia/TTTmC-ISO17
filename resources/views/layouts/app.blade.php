@@ -64,7 +64,7 @@
                         @else
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                {{ Auth::user()->name }} <span class="caret"></span>
+                                {{ Auth::user()->username }} <span class="caret"></span>
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -74,9 +74,6 @@
                                 </a>
                                 <a class="dropdown-item" href="{{ route('profile') }}">
                                     {{ __('Profile') }}
-                                </a>
-                                <a class="dropdown-item" href="{{ route('editProfile') }}">
-                                    {{ __('change Picture') }}
                                 </a>
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
