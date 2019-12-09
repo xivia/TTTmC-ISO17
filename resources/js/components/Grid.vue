@@ -188,13 +188,13 @@ body {
   margin: 20px 0 0;
   height: 60px;
 }
-.footer-gird .restart {
+.footer-grid .restart {
   display: block;
   background: #ccc;
   line-height: 55px;
   height: 60px;
 }
-.footer-gird .restart:hover {
+.footer-grid .restart:hover {
   cursor: pointer;
   color: #fe6700;
 }

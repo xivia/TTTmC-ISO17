@@ -33,7 +33,7 @@
                         <tr>
                             <td>Nils</td>
                             <td>Rookie</td>
-                            <td>4</td>
+                            <td>4</td>  
                             <td>1/3</td>
                             <td>1978</td>
                         </tr>

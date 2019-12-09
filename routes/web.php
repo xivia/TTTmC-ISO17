@@ -11,12 +11,7 @@
 |
 */
 
-
-
-
-Route::get('/', function () {
-    return view('welcome');
-})->middleware('auth');
+Route::get('/', function () {return view('welcome');});
 
 Auth::routes();
 

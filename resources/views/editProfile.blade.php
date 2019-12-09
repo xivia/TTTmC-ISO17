@@ -54,6 +54,43 @@
                             </div>
                         </div>
 
+                        
+
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right"></label>
+                            <button class="col-md-6 btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExamplePicture" aria-expanded="false" aria-controls="collapseExamplePicture">Change your Profile Picture</button>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right"></label>
+                            <div class="collapse col-md-6" id="collapseExamplePicture">
+
+                                <div class="text-center">
+
+                                    <img src="{{url('/images/cat.jpg')}}" alt="profilBild" height="84" width="84" class="rounded-circle">
+                                    <input class="form-check-input" type="radio" name="picture" id="exampleRadios1" value="cat.jpg" >
+
+                                    <img src="{{url('/images/born-roman.jpg')}}" alt="profilBild" height="84" width="84" class="rounded-circle">
+                                    <input class="form-check-input" type="radio" name="picture" id="exampleRadios1" value="born-roman.jpg" >
+
+                                </div>
+
+                                <br>
+
+                                <div class="text-center">
+
+                                    <img src="{{url('/images/enemy.jpg')}}" alt="profilBild" height="84" width="84" class="rounded-circle">
+                                    <input class="form-check-input" type="radio" name="picture" id="exampleRadios1" value="enemy.jpg" >
+
+                                    <img src="{{url('/images/off.png')}}" alt="profilBild" height="84" width="84" class="rounded-circle">
+                                    <input class="form-check-input" type="radio" name="picture" id="exampleRadios1" value="off.png" >
+
+                                </div>
+
+                            </div>
+                        </div>
+                    
+
                         <div class="form-group row">
                             <label class="col-md-4 col-form-label text-md-right"></label>
                             <button class="col-md-6 btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Change your Password</button>
