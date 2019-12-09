@@ -19,7 +19,7 @@
 							<br>
                             {{ $user->lastname }}
                             <br>
-                            {{ $user->picturepath }}
+                            {{ $user->status }}
                             <br>
 							{{ $user->email }} 
 
