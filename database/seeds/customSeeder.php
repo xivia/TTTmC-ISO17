@@ -13,7 +13,7 @@ class customSeeder extends Seeder
     {
         $log = new App\Log();
         $log->userId = 1;
-        $log->match = '8034076';
+        $log->date = 'today';
         $log->enemy =  'AI';
         $log->difficulty =  'hard';
         $log->moves = 4;
@@ -22,7 +22,7 @@ class customSeeder extends Seeder
 
         $log = new App\Log();
         $log->userid = 2;
-        $log->match = '7546793';
+        $log->date = 'today';
         $log->enemy =  'User1';
         $log->difficulty =  'medium';
         $log->moves = 3;
@@ -31,7 +31,7 @@ class customSeeder extends Seeder
 
         $log = new App\Log();
         $log->userid = 3;
-        $log->match = '5467754';
+        $log->date = 'today';
         $log->enemy =  'User2';
         $log->difficulty =  'easy';
         $log->moves = 6;

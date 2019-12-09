@@ -3,22 +3,37 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 use App\Log;
+use App\User;
+use Carbon\Carbon;
+
 
 class PreviousGamesController extends Controller
 {
     public function index()
     {
-        $log = Log::orderBy('enemy', 'desc')->get();
+        //$user = User::find($id);
 
-        return view('previousGames', compact('log'));
+        $id = Auth::id();
+        $log = Log::where('userid', $id)->orderBy('enemy', 'desc')->get();
+
+        return view('previousGames', compact('log', 'user'));
+    }
+
+    public function store($res)
+    {
+        Log::insert(
+            ['userid' => Auth::id()],
+            ['date' => Carbon\Carbon::now()],
+            ['enemy' => 'self'],
+            ['result' => $res],
+            ['difficulty' => 'easy'],
+            ['moves' => 'too many']
+        );
     }
 
     public function show()
-    {
-        $log = Log::orderBy('enemy', 'desc')->get();
-
-        return view('previousGames', compact('log'));
-    }
+    { }
 }

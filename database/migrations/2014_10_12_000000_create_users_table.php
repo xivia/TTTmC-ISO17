@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('lastname')->default('');
             $table->string('username')->default('');
             $table->string('status')->default('');
-            $table->string('picturepath')->default('');
+            $table->string('picturepath')->default('profilBild.jpg');
             $table->string('email')->unique();
             $table->string('color')->default('White');
             $table->string('role')->default('Customer');

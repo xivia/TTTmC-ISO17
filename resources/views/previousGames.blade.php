@@ -16,7 +16,7 @@
 	<table class="table">
 		<thead>
 			<tr>
-				<th scope="col">match</th>
+				<th scope="col">Date</th>
 				<th scope="col">Enemy</th>
 				<th scope="col">Result</th>
 				<th scope="col">Difficulty</th>
@@ -28,7 +28,7 @@
 			@if(isset($log))
 			@foreach($log as $log)
 			<tr>
-				<td> {{$log->match}} </td>
+				<td> {{$log->date}} </td>
 				<td> {{$log->enemy}} </td>
 				<td> {{$log->result}} </td>
 				<td> {{$log->difficulty}} </td>
