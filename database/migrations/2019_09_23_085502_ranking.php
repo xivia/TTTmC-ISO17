@@ -12,7 +12,6 @@ class Ranking extends Migration
      * @return void
      */
 
-
     public function up()
     {
         Schema::create('rankings', function (Blueprint $table) {
