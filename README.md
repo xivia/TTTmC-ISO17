@@ -4,3 +4,5 @@ Ok, so here's what's going on. This guy just invaded me and he's not prepared fo
 * *Enrico Sentina:*
 
 "Become friends with someone, and they may allow you to take certain items from their home" Skyrim loading screen
+
+--
